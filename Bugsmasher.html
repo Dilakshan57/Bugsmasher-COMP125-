@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bug Smasher</title>
+    <style>
+        body{
+            background-color: #e8cb5f;
+        }
+        canvas {
+            border: 1px solid black;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            background-image: url(unnamed.png);
+        }
+        
+        #game-info {
+            border: 1px solid black;
+            padding: 25px;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            align-items: center;
+            width: 50%;
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+        #game-details {
+            border: 1px solid black;
+            margin-top: 40px;
+            text-align: left;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 50%;
+            margin-left: auto; /* Move the box to the center horizontally */
+            margin-right: auto;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bug Smasher</h1>
+    
+    <div id="game-details">
+        <h2>About the Game</h2>
+        <p>Bug Smasher is an exciting browser-based game where you have to catch bugs by clicking on them. The bugs will randomly hop around the game area, and your goal is to smash as many bugs as possible within the given time limit.</p>
+        <h2>How to Play</h2>
+        <p>To play Bug Smasher, simply click on the bugs as they appear on the screen. Each successful hit will increase your score. You can use the <b>Timer option</b> to set the time duration of your game. The <b>Reset speed</b> option brings the speed of the game to its initial speed and the <b>Reset score</b> button to reset the game. <b>Smash your first Bug to initiate the game.</b> Be quick and accurate to achieve a high score!</p>
+    </div><br><br>
+
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div id="game-info">
+    <p>Score: <span id="score">0</span></p>
+    <button onclick="resetScore()">Reset Score</button>
+    <button onclick="resetSpeed()">Reset Speed</button> &nbsp; &nbsp;
+    <label for="timer">Timer:</label>
+    <select id="timer" onchange="updateTime()">
+        <option value="10">10 seconds</option>
+        <option value="20">20 seconds</option>
+        <option value="30" selected>30 seconds</option>
+        <option value="60">1 minute</option>
+    </select>
+    
+    </div>
+
+    <script src="buggie.js"></script>
+</body>
+</html>

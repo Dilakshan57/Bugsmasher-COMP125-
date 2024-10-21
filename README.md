@@ -13,9 +13,12 @@ If the bug becomes too fast to catch, the player can click the "Reset Speed" but
 
 The player can also click the "Reset Score" button to start fresh by setting the score back to 0.
 # Features
-Increasing Difficulty: With every successful click, the bug speeds up, adding a layer of challenge.
-Reset Options: Players can reset either the speed or the score at any point.
-Interactive Gameplay: Simple point-and-click mechanics make the game easy to play but hard to master!
+### Increasing Difficulty:
+With every successful click, the bug speeds up, adding a layer of challenge.
+### Reset Options:
+Players can reset either the speed or the score at any point.
+###Interactive Gameplay: 
+Simple point-and-click mechanics make the game easy to play but hard to master!
 # Technologies Used
 HTML and CSS for the layout and design
 JavaScript to handle the game logic and bug movements
